@@ -1,0 +1,116 @@
+.page-contianier {
+  width: 80%;
+  margin: auto;
+  .buttons {
+    margin: 25px;
+    display: flex;
+
+    .button {
+      width: 100px;
+      height: 30px;
+      border: 1px solid #ddd;
+      text-align: center;
+      cursor: pointer;
+
+      span {
+        line-height: 30px;
+      }
+    }
+
+    .button:hover {
+      border-color: #0065ff;
+      color: #0065ff;
+    }
+  }
+
+  .picture-list {
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+    margin: 25px;
+
+    .picture-item {
+      width: 20%;
+      cursor: pointer;
+
+      .img {
+        text-align: center;
+      }
+      .picture-info {
+        text-align: center;
+
+        .type{
+          color: red;
+        }
+
+        .time {
+          color: #bfbfbf;
+        }
+      }
+    }
+  }
+}
+
+.example-container {
+  width: 400px;
+  max-width: 100%;
+  margin: 0 25px 25px 0;
+  display: inline-block;
+  vertical-align: top;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.example-list {
+  border: solid 1px #ccc;
+  min-height: 60px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  clear: both;
+  margin: 25px;
+
+  .picture-item {
+    width: 50%;
+    cursor: pointer;
+
+    .img {
+      text-align: center;
+    }
+    .picture-info {
+      text-align: center;
+
+      .type{
+        color: red;
+      }
+
+      .time {
+        color: #bfbfbf;
+      }
+    }
+  }
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.example-list.cdk-drop-list-dragging  {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
